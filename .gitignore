@@ -1,0 +1,9 @@
+**\bin
+**\obj
+**\Bin
+**\PrecompiledWeb
+Thumbs.db
+*.user
+*.suo
+*.bak
+*.cache

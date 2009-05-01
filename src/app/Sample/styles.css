@@ -1,0 +1,11 @@
+﻿* { margin: 0px; padding: 0px; }
+body, p, td, th { font-family: Arial,Helvetica,Sans-Serif; font-size: 12px; }
+ul { list-style-position: inside; padding: 0px 10px; margin: 5px 0px;}
+h1 { background-color: #e73e97; color: White; padding: 0px 10px; margin-bottom: 5px; }
+h2 { background-color: #e73e97; color: White; padding: 0px 10px; margin-bottom: 5px; }
+p { padding: 0px 10px; margin: 5px 0px; }
+p.date { color: #999999; font-size: 10px; margin-top: 20px; }
+#container { width: 600px; margin-left: auto; margin-right: auto; }
+#main { width: 380px; margin-right: 200px;  min-height: 180px;}
+#right { width: 180px; float: right; min-height: 180px;}
+.block { border: 1px #999999 dashed; background-color: #FAF9F7; margin-top: 4px; margin-bottom: 4px; }
