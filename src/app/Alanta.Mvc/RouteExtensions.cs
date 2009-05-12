@@ -49,7 +49,7 @@ namespace Alanta.Mvc
       /// <returns>A strong typed route.</returns>
       /// <exception cref="ArgumentNullException">Occures when <paramref name="url"/> is <c>null</c>.</exception>
       public static Route MapRoute<T>( this RouteCollection routes, string name, string url, object defaults, object constraints )
-         where T : Controller
+         where T : Controller, new()
       {
          if ( routes == null )
          {

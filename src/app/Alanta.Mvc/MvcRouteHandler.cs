@@ -36,7 +36,7 @@ namespace Alanta.Mvc
    /// </summary>
    /// <typeparam name="TController">The type of the controller.</typeparam>
    internal class MvcRouteHandler<TController> : System.Web.Routing.IRouteHandler
-         where TController : System.Web.Mvc.Controller
+         where TController : System.Web.Mvc.Controller, new()
    {
       /// <summary>
       /// Gets the HTTP handler to process the request.
@@ -45,7 +45,7 @@ namespace Alanta.Mvc
       /// <returns>The HTTP handler to process the request.</returns>
       public IHttpHandler GetHttpHandler( System.Web.Routing.RequestContext requestContext )
       {
-         return new MvcHttpHandler( Activator.CreateInstance<TController>(), requestContext );
+         return new MvcHttpHandler( new TController(), requestContext );
       }
    }
 }
